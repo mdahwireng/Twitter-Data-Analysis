@@ -107,8 +107,8 @@ class TweetDfExtractor:
         return hashtags
 
     def find_mentions(self)->list:
-        mentions = 
-
+        mentions = [i['entities']['user_mentions'] for i in self.tweets_list]
+        return mentions
 
     def find_location(self)->list:
         try:
