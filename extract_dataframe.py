@@ -119,6 +119,9 @@ class TweetDfExtractor:
         
         return location
 
+    def find_lang(self)->list:
+        lang = [i['lang'] for i in self.tweets_list]
+        return lang
     
         
         
