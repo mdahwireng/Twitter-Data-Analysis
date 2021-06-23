@@ -43,7 +43,7 @@ class Clean_Tweets:
         """
         columns =['polarity', 'subjectivity', 'favorite_count', 'retweet_count','followers_count','friends_count']
         for col in columns:
-            df['col'] = pd.to_numeric(df['col'])
+            df[col] = pd.to_numeric(df[col])
         
         return df
     
